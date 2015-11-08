@@ -7,7 +7,7 @@ namespace even_fibonacci_numbers
     {
         public int CalculateSum(int upperLimit)
         {
-            var evenFibonacciNumbers = new List<FibonacciNumber>();
+            var sum = 0;
 
             var current = new FibonacciNumber(1, 1);
 
@@ -15,13 +15,13 @@ namespace even_fibonacci_numbers
             {
                 if (current.Value % 2 == 0)
                 {
-                    evenFibonacciNumbers.Add(current);
+                    sum += current.Value;
                 }
 
                 current = current.Next();
             }
 
-            return evenFibonacciNumbers.Sum(x => x.Value);
+            return sum;
         }
     }
 }
