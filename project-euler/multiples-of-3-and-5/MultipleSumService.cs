@@ -8,11 +8,11 @@ namespace multiples_of_3_and_5
 {
     public class MultipleSumService
     {
-        public int CalculateSum()
+        public int CalculateSum(int upperLimit)
         {
             var uniqueMultiples = new HashSet<int>();
 
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < upperLimit; i++)
             {
                 if (i%3 == 0 || i%5 == 0)
                 {

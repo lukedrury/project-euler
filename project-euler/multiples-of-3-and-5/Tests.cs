@@ -10,7 +10,7 @@ namespace multiples_of_3_and_5
         {
             var multipleSumService = new MultipleSumService();
 
-            var sum = multipleSumService.CalculateSum();
+            var sum = multipleSumService.CalculateSum(1000);
 
             Assert.That(sum, Is.EqualTo(233168));
         }
