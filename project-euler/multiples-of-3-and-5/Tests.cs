@@ -5,14 +5,14 @@ namespace multiples_of_3_and_5
     [TestFixture]
     public class Tests
     {
-        [Test]
-        public void GivesCorrectSum()
+        [TestCase(1000, 233168)]
+        public void GivesCorrectSum(int upperLimit, int expectedSum)
         {
             var multipleSumService = new MultipleSumService();
 
-            var sum = multipleSumService.CalculateSum(1000);
+            var sum = multipleSumService.CalculateSum(upperLimit);
 
-            Assert.That(sum, Is.EqualTo(233168));
+            Assert.That(sum, Is.EqualTo(expectedSum));
         }
     }
 }
