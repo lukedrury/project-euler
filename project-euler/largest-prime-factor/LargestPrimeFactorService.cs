@@ -10,6 +10,8 @@ namespace largest_prime_factor
     {
         public int CalculateLargestPrimeFactor(int target)
         {
+            if (target < 2) throw new InvalidOperationException($"Prime factors cannot be calculated for number less than 2. {target} was provided.");
+
             return -1;
         }
     }
