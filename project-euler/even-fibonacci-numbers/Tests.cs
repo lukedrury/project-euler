@@ -5,7 +5,7 @@ namespace even_fibonacci_numbers
     [TestFixture]
     public class Tests
     {
-        [TestCase(90, 231)]
+        [TestCase(90, 44)]
         public void GivesCorrectSum(int upperLimit, int expectedSum)
         {
             var evenFibonacciSumService = new EvenFibonacciSumService();

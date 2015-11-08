@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace even_fibonacci_numbers
 {
@@ -10,7 +7,21 @@ namespace even_fibonacci_numbers
     {
         public int CalculateSum(int upperLimit)
         {
-            return 0;
+            var evenFibonacciNumbers = new List<FibonacciNumber>();
+
+            var current = new FibonacciNumber(1, 1);
+
+            while (current.Value < upperLimit)
+            {
+                if (current.Value % 2 == 0)
+                {
+                    evenFibonacciNumbers.Add(current);
+                }
+
+                current = current.Next();
+            }
+
+            return evenFibonacciNumbers.Sum(x => x.Value);
         }
     }
 }
