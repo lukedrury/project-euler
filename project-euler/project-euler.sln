@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multiples-of-3-and-5", "mul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "even-fibonacci-numbers", "even-fibonacci-numbers\even-fibonacci-numbers.csproj", "{70CFAA3B-E736-4B1E-A120-28E3B2014594}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "largest-prime-factor", "largest-prime-factor\largest-prime-factor.csproj", "{75E619EC-E211-4180-8853-671F557970D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{70CFAA3B-E736-4B1E-A120-28E3B2014594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70CFAA3B-E736-4B1E-A120-28E3B2014594}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70CFAA3B-E736-4B1E-A120-28E3B2014594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E619EC-E211-4180-8853-671F557970D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E619EC-E211-4180-8853-671F557970D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E619EC-E211-4180-8853-671F557970D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E619EC-E211-4180-8853-671F557970D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
