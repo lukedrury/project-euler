@@ -6,6 +6,9 @@ namespace largest_prime_factor
     [TestFixture]
     public class Tests
     {
+        [TestCase(10, 5)]
+        [TestCase(100, 5)]
+        [TestCase(1234, 617)]
         [TestCase(13195, 29)]
         public void CorrectLargestPrimeFactor(int target, int expectedLargestPrimeFactor)
         {
