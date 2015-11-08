@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 
 namespace largest_prime_factor
 {
@@ -13,6 +14,13 @@ namespace largest_prime_factor
             var largestPrimeFactor = service.CalculateLargestPrimeFactor(target);
 
             Assert.That(largestPrimeFactor, Is.EqualTo(expectedLargestPrimeFactor));
+        }
+
+        [Test]
+        public void ThrowsForNumbersBelowTwo()
+        {
+            var service = new LargestPrimeFactorService();
+            Assert.Throws<InvalidOperationException>(() => service.CalculateLargestPrimeFactor(1));
         }
 
         [TestCase(2)]
