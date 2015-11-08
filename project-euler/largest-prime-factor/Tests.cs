@@ -14,5 +14,19 @@ namespace largest_prime_factor
 
             Assert.That(largestPrimeFactor, Is.EqualTo(expectedLargestPrimeFactor));
         }
+
+        [TestCase(0, false)]
+        [TestCase(1, false)]
+        [TestCase(2, true)]
+        [TestCase(3, true)]
+        [TestCase(4, false)]
+        public void NumberKnowsIfItIsPrime(int value, bool expectedIsPrime)
+        {
+            var number = new Number(value);
+
+            var isPrime = number.IsPrime();
+
+            Assert.That(isPrime, Is.EqualTo(expectedIsPrime));
+        }
     }
 }
