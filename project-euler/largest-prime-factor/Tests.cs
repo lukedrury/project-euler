@@ -10,7 +10,7 @@ namespace largest_prime_factor
         [TestCase(100, 5)]
         [TestCase(1234, 617)]
         [TestCase(13195, 29)]
-        public void CorrectLargestPrimeFactor(int target, int expectedLargestPrimeFactor)
+        public void CorrectLargestPrimeFactor(long target, int expectedLargestPrimeFactor)
         {
             var service =  new LargestPrimeFactorService();
 

@@ -4,9 +4,9 @@ namespace largest_prime_factor
 {
     public class Number
     {
-        public int Value { get; }
+        public long Value { get; }
 
-        public Number(int value)
+        public Number(long value)
         {
             Value = value;
         }
@@ -22,7 +22,7 @@ namespace largest_prime_factor
             {
                 var valueAfterDivision = asDecimal/currentPossibleFactor;
 
-                var isWholeNumber = (valueAfterDivision - (int) valueAfterDivision) == 0;
+                var isWholeNumber = (valueAfterDivision - (long) valueAfterDivision) == 0;
 
                 if (isWholeNumber) return false;
             }

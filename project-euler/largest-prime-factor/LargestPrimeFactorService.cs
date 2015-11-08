@@ -8,7 +8,7 @@ namespace largest_prime_factor
 {
     public class LargestPrimeFactorService
     {
-        public int CalculateLargestPrimeFactor(int target)
+        public long CalculateLargestPrimeFactor(long target)
         {
             if (target < 2) throw new InvalidOperationException($"Prime factors cannot be calculated for number less than 2. {target} was provided.");
 
@@ -37,9 +37,9 @@ namespace largest_prime_factor
             while (true)
             {
                 decimal divison = target.Value / factor;
-                if (divison == (int) divison)
+                if (divison == (long) divison)
                 {
-                    var leftPossibleFactor = new Number((int) factor);
+                    var leftPossibleFactor = new Number((long) factor);
                     if (leftPossibleFactor.IsPrime())
                     {
                         primeFactors.Add(leftPossibleFactor);
@@ -50,7 +50,7 @@ namespace largest_prime_factor
                         primeFactors.AddRange(leftPrimeFactors);
                     }
 
-                    var rightPossibleFactor = new Number((int) divison);
+                    var rightPossibleFactor = new Number((long) divison);
                     if (rightPossibleFactor.IsPrime())
                     {
                         primeFactors.Add(rightPossibleFactor);
